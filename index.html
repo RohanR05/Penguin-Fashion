@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      </style>
+    <title>Penguin Fashion</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+.roboto{
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+}
+.bebas{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+      </style>
+</head>
+<body class="roboto">
+    <header class="bg-[#fffbf0]">
+      <!-- navbar -->
+      <nav class="max-w-screen-xl mx-auto px-10 py-4 
+      flex justify-between items-center">
+        <div class="w-48 h-7 lg:w-72 lg:h-10"><img src="./icons/logo.png" alt=""></div>
+        <div>
+          <div class="h-7 w-7 lg:hidden"><img src="./icons/3 Line.png" alt=""></div>
+          <div class="hidden lg:inline-block">
+            <ul class=" flex gap-11">
+              <li><a class="font-medium text-[#3c3c3c]" href="">Home</a></li>
+              <li><a class="font-medium text-[#3c3c3c]" href="">Product</a></li>
+              <li><a class="font-medium text-[#3c3c3c]" href="">About Us</a></li>
+              <li><a class="font-medium text-[#3c3c3c]" href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar close -->
+      <!-- banner -->
+      <div class="mx-4 lg:max-w-screen-xl px-10 lg:mx-auto lg:flex lg:gap-80 lg:items-center">
+        <div>
+          <h3 class="text-6xl bebas lg:leading-24 lg:text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span><br>
+            of Winter</h3>
+          <p class="text-[#3e3e3e]">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+          <button class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white mt-5"><i class="fa-solid fa-cart-shopping"></i>BUY NOW<button>
+        </div>
+        <div class="mt-5">
+          <img src="images/model.png" alt="">
+        </div>
+      </div>
+    </header>
+</body>
+</html>
